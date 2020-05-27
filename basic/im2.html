@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>product</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>gimme the product!</p>
+
+<button onclick="avg(ina, inb, inc)">start</button>
+
+<script>
+
+	var ina = prompt("tell us your math grade!");
+	var inb = prompt("tell us your physics grade!");
+	var inc = prompt("tell us your enlish grade!");
+
+function avg(a, b, c){
+	var x = Number(a) + Number(b) + Number(c);
+	var average = x / 3;
+	var result = [x, average];
+	document.write("the sum of your grade is " + result[0] + " and your average grade is " + result[1]);
+}
+
+
+avg(ina, inb, inc);
+
+
+</script>
+</body>
+</html>
