@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>product</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<button onclick="getProduct()">clickMe</button>
+<p>gimme the product!</p>
+
+
+
+<script>
+
+var a = prompt("input how many numbers you want to add!");
+// var b = prompt("input the second number!");
+// var c = prompt("input the third number!");
+// var d = prompt("input the fourth number!");
+
+var array =[]
+
+function getProduct(){
+	var multi = 1;
+	for(var i = 0 ; i < a; i++){
+		var val = prompt("add a number");
+		array.push(Number(val));
+		multi = multi * Number(val);
+	}
+
+	console.log(array);
+	console.log(multi)
+	
+	
+	
+	    
+	
+}
+getProduct();
+
+</script>
+</body>
+</html>
