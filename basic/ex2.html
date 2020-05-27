@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <script>
+        function ageCalculator(currentYear, birthYear) {
+            return currentYear - birthYear;
+        }
+
+        function ageCalculator1(currentYear, birthYear, x) {
+            return currentYear - birthYear - x;
+        }
+        var myAge = ageCalculator(2021, 1992);
+        var myAge1 = ageCalculator1(2021, 1992, 1);
+        document.write("You are either ");
+        document.write(myAge);
+        document.write(" or ");
+        document.write(myAge1);
+    </script>
+</body>
+
+</html>
