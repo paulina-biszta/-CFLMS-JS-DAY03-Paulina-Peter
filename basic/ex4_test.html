@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Degree-Radian Conversion</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<button onclick="degRadConv(input_a)">start</button>
+
+<p>Degree-Radian Conversion</p>
+
+
+<script>
+var input_a = prompt("degreeeeeees?");
+
+function degRadConv(deg){
+	var p = Math.PI;
+	var result =deg * (p/180);
+	document.write('Radians:' + result);
+	return;
+}
+
+
+</script>
+</body>
+</html>
