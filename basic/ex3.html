@@ -9,19 +9,15 @@
 
 <body>
     <script>
-        function ageCalculator(currentYear, birthYear) {
-            return currentYear - birthYear;
-        }
+        function ageCalculator1(birthYear) {
 
-        function ageCalculator1(currentYear, birthYear, x) {
-            return currentYear - birthYear - x;
-        }
+            var currentYear = new Date();
+            var n = currentYear.getFullYear();
+            var possible_age = n - birthYear;
+            return possible_age;
 
-        var currentYear = new Date();
-        var n = currentYear.getFullYear();
-        var myAge = ageCalculator(n, 1991);
-        var myAge1 = ageCalculator1(n, 1991, 1);
-        document.write("You are either " + myAge + " or " + myAge1);
+        }
+        document.write("Your age are " + ageCalculator1(1991) + " or " + (ageCalculator1(1991) - 1));
     </script>
 </body>
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <script>
+        function box(width, height, depth) {
+
+            var area = width * height;
+            var volume = area * depth;
+            var result = [area, volume];
+            return result;
+
+        }
+        document.write("The area of the box is: " + box(2, 7, 5)[0]);
+        document.write("<br>");
+        document.write("The volume of the box is: " + box(2, 7, 5)[1]);
+    </script>
+</body>
+
+</html>
