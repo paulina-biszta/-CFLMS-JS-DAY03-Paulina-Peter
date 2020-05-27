@@ -11,12 +11,13 @@
 
 
     <script>
-        var area = (function() {
-            var str = "i am a web developer";
-            var res = str.charAt(0)
+        (function() {
+            var val = prompt("enter your sentence")
+            var res = val.charAt(0);
             var n = res.toUpperCase();
+            var c = val.replace("i", n);
 
-            document.write(n + str);
+            document.write(c);
         }());
     </script>
 </body>
