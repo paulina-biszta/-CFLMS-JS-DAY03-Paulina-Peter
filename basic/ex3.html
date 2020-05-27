@@ -16,8 +16,11 @@
         function ageCalculator1(currentYear, birthYear, x) {
             return currentYear - birthYear - x;
         }
-        var myAge = ageCalculator(2020, 1991);
-        var myAge1 = ageCalculator1(2020, 1991, 1);
+
+        var currentYear = new Date();
+        var n = currentYear.getFullYear();
+        var myAge = ageCalculator(n, 1991);
+        var myAge1 = ageCalculator1(n, 1991, 1);
         document.write("You are either " + myAge + " or " + myAge1);
     </script>
 </body>
